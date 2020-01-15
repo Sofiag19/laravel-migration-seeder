@@ -1,19 +1,14 @@
 @extends('layouts.app')
 
 @section('fumetti')
-<ol>
+
     @foreach($fumetti as $fumetto)
-    <li>
-        <ul>
-            <li>{{ $fumetto['titolo'] }}</li>
-            <li>{{ $fumetto['autore'] }}</li>
-            <li>{{ $fumetto['anno'] }}</li>
-            <li>{{ $fumetto['recensione'] }}</li>
-            <li>{{ $fumetto['voto'] }}</li>
-        </ul>
-    </li>
+        <p>TITOLO LIBRO: "{{ $fumetto['titolo'] }}"</p>
+        <p>AUTORE: {{ $fumetto['autore'] }}</p>
+        <p>ANNO PUBBLICAZIONE: {{ $fumetto['anno'] }}</p>
+        <p>RECENSIONE: {{ $fumetto['recensione'] }}</p>
+        <p>VOTO: {{ $fumetto['voto'] }}</p>
     <br>
     @endforeach
-</ol>
 
 @endsection
