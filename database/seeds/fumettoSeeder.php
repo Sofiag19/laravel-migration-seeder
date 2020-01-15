@@ -26,8 +26,13 @@ class fumettoSeeder extends Seeder
 
             ];
 
+            //va a creare un oggetto della classe nel model
             $fumetto = new fumetto;
+
+            //valorizza i campi con il fillable
             $fumetto -> fill($newFumetto);
+            
+            //prende l'oggetto con i fillable e salvalo nel db
             $fumetto -> save();
 
         }
