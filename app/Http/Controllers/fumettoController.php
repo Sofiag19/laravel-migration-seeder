@@ -12,6 +12,6 @@ class fumettoController extends Controller
         $fumetti = fumetto::all();
         //dd($fumetti);
 
-        return view('layouts/app', compact('fumetti'));
+        return view('pages.fumetti', compact('fumetti'));
     }
 }
