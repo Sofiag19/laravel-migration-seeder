@@ -1,8 +1,73 @@
-body {
-  background-color: grey;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body p {
-  color: blue;
+body {
+  background-color: #FCFBAE;
+}
+
+body header {
+  font-size: 30px;
+  color: #6F4FFD;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+body .fumContainer {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  flex-wrap: wrap;
+}
+
+body .fumContainer .fum {
+  width: 200px;
+  text-align: center;
+}
+
+body .fumContainer .fum .anteprima {
+  position: relative;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  height: 200px;
+  width: 150px;
+  background-color: #94C977;
+  border: solid 1px #475327;
+  border-radius: 20px;
+}
+
+body .fumContainer .fum .anteprima .impoInfo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 130px;
+}
+
+body .fumContainer .fum .anteprima .impoInfo .titolo {
+  color: #51962C;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-decoration: underline;
+  overflow: hidden;
+}
+
+body .fumContainer .fum .anteprima .impoInfo .autore {
+  color: #475327;
+}
+
+body .fumContainer .fum .descr {
+  width: 180px;
+  color: #777EC9;
+}
+
+body .fumContainer .fum .descr .name {
+  color: #6F4FFD;
+  text-decoration: underline;
 }
 

@@ -1,7 +1,66 @@
 //
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-  background-color: grey;
-  p {
-    color: blue;
+  background-color: #FCFBAE;
+
+  header {
+    font-size: 30px;
+    color: #6F4FFD;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  .fumContainer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    .fum {
+      width: 200px;
+      text-align: center;
+      .anteprima {
+        position: relative;
+        left: 50%;
+        transform: translate(-50%);
+        height: 200px;
+        width: 150px;
+        background-color: #94C977;
+        border: solid 1px hsl(76, 36%, 24%);
+        border-radius: 20px;;
+        
+        .impoInfo {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%,-50%);
+          width: 130px;;
+          
+          .titolo {
+            color: #51962C;
+            text-transform: uppercase;
+            font-weight: bold;
+            text-decoration: underline;
+            overflow: hidden;
+          }
+          .autore {
+            color: hsl(76, 36%, 24%);
+          }
+        }
+      }
+      .descr {
+        width: 180px;
+        color: #777EC9;
+        
+        .name {
+          color: #6F4FFD ;
+          text-decoration: underline;
+        }
+      }
+    }
   }
 }
